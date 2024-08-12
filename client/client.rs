@@ -66,6 +66,7 @@ fn parser_header(
     header_key: HeaderKey,
     macaroon: Macaroon,
     http: HTTP,
+    hex: Hex,
 )
 {
     // Placeholder for the function body
