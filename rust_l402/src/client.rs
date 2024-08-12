@@ -1,13 +1,29 @@
 mod client;
 
+// Intial pub function for Cliemt
 pub fn client() {
     crate::client::client();
 }
 
-pub fn server() {
-    crate::server::server();
+fn main () {
+    client();
 }
 
-pub fn server_with_client() {
-    crate::server::server_with_client();
+impl changellenge {
+fn changellenge() {
+  HeaderKey::new();
+  Invoice::new();
+  Macroon::new();
 }
+}
+fn client() {
+    Wallet::new();
+    store::new();
+
+}
+
+fn new(wallet&str, store&str) {
+    let wallet = wallet;
+    let store = store;
+}
+
