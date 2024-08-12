@@ -40,3 +40,13 @@ fn initialize(wallet: Wallet, store: Store) {
     let _store = store;
 }
 
+// HTTP function for pays invoice with client and L2402 client
+fn http_pays_invoice_with_client_and_l2402_client (
+    client: Client,
+    l2402_client: L2402Client,
+    invoice: Invoice,
+    macaroon: Macaroon,
+)
+{
+    // Placeholder for the function body
+}
