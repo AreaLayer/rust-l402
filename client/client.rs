@@ -1,33 +1,42 @@
 mod client;
 
-// Intial pub function for Cliemt
-pub fn client() {
-    crate::client::client();
+// Initial public function for Client
+pub fn call_client() {
+    client::client_function();
 }
 
-pub crate L2402(){
-    crate::L2402::L2402();
+// Placeholder for the L2402 function
+pub(crate) fn L2402() {
+    // Assuming L2402 is part of the crate (module) or some other logic
+    println!("This is the L2402 function.");
 }
 
-fn main () {
-    client();
+fn main() {
+    call_client();
+    L2402();
 }
 
-impl changellenge {
-fn changellenge() {
-  HeaderKey::new();
-  Invoice::new();
-  Macroon::new();
-}
-}
-fn client() {
-    Wallet::new();
-    store::new();
+// Define a struct for Challenge
+struct Challenge;
 
+impl Challenge {
+    fn challenge() {
+        // Assuming these are placeholder structs or types
+        HeaderKey::new();
+        Invoice::new();
+        Macaroon::new();
+    }
 }
 
-fn new(wallet, store) {
-    let wallet = wallet;
-    let store = store;
+// A client function implementation in the main module
+fn client_function() {
+    let wallet = Wallet::new();
+    let store = Store::new();
+}
+
+// Placeholder function for initializing with wallet and store
+fn initialize(wallet: Wallet, store: Store) {
+    let _wallet = wallet;
+    let _store = store;
 }
 
