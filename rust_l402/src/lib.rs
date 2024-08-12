@@ -1,4 +1,3 @@
-// src/lib.rs or src/main.rs
 mod my_module;
 
 pub fn public_function() {
