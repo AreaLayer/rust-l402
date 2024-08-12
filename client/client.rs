@@ -5,15 +5,15 @@ pub fn call_client() {
     client::client_function();
 }
 
-// Placeholder for the L2402 function
-pub(crate) fn L2402() {
-    // Assuming L2402 is part of the crate (module) or some other logic
-    println!("This is the L2402 function.");
+// Placeholder for the L402 function
+pub(crate) fn L402() {
+    // Assuming L402 is part of the crate (module) or some other logic
+    println!("This is the L402 function.");
 }
 
 fn main() {
     call_client();
-    L2402();
+    L402();
 }
 
 // Define a struct for Challenge
@@ -40,10 +40,10 @@ fn initialize(wallet: Wallet, store: Store) {
     let _store = store;
 }
 
-// HTTP function for pays invoice with client and L2402 client
-fn http_pays_invoice_with_client_and_l2402_client (
+// HTTP function for pays invoice with client and L402 client
+fn http_pays_invoice_with_client_and_l402_client (
     client: Client,
-    l2402_client: L2402Client,
+    l402_client: L402Client,
     invoice: Invoice,
     macaroon: Macaroon,
 )
@@ -53,7 +53,7 @@ fn http_pays_invoice_with_client_and_l2402_client (
 // HandlePaymentChangelleges function for pays invoice with client and L2402 client
 fn handle_payment_challenges(
     client: Client,
-    l2402_client: L2402Client,
+    l402_client: L402Client,
     invoice: Invoice,
     macaroon: Macaroon,
 )
