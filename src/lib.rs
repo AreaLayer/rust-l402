@@ -24,6 +24,3 @@ impl RustL402 {
         tokenstore::tokenstore_function();
     }
 }
-fn main() {
-    rust_L402();
-}
