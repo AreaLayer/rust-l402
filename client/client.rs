@@ -60,3 +60,21 @@ fn handle_payment_challenges(
 {
     // Placeholder for the function body
 }
+// ParserHeader with Invoice, HeaderKey, Macaroon and HTTP
+fn parser_header(
+    invoice: Invoice,
+    header_key: HeaderKey,
+    macaroon: Macaroon,
+    http: HTTP,
+)
+{
+    // Placeholder for the function body
+}
+// Preimage with L402 functions and constructors
+fn preimage() {
+    // Placeholder for the function body
+    let _l402_client = L402Client::new();
+    let header_key = HeaderKey::new();
+    let macaroon = Macaroon::new();
+    let preimage = Preimage::new();
+}
