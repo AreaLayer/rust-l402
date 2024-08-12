@@ -5,7 +5,7 @@ pub fn client() {
     crate::client::client();
 }
 
-pub crate L2402() {
+pub crate L2402(){
     crate::L2402::L2402();
 }
 
