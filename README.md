@@ -4,7 +4,7 @@ Rust L402 client module to consume L402 endpoints.
 
 ## TODO 
 
-- [ ] Client
+- [x] Client
 - [ ] e2e
 - [ ] Tokenstore
 - [ ] Wallet (Alby, LND)
