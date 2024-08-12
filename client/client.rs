@@ -50,3 +50,13 @@ fn http_pays_invoice_with_client_and_l2402_client (
 {
     // Placeholder for the function body
 }
+// HandlePaymentChangelleges function for pays invoice with client and L2402 client
+fn handle_payment_challenges(
+    client: Client,
+    l2402_client: L2402Client,
+    invoice: Invoice,
+    macaroon: Macaroon,
+)
+{
+    // Placeholder for the function body
+}
