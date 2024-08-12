@@ -1,4 +1,6 @@
-mod my_module;
+mod client;
+mod wallet;
+mod tokenstore;
 
 pub fn public_function() {
     crate::my_module::internal_function();

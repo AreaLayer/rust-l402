@@ -26,7 +26,7 @@ fn client() {
 
 }
 
-fn new(wallet&str, store&str) {
+fn new(wallet, store) {
     let wallet = wallet;
     let store = store;
 }
