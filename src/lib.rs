@@ -27,11 +27,12 @@ mod tokenstore {
         // Implementation goes here
         let memory = Vec::new();
     }pub struct RustL402;
-
-impl RustL402 {
-    pub fn rust_l402() {
-        client::client_function();
-        wallet::wallet_function();
-        tokenstore::tokenstore_function();
-    }
 }
+    impl RustL402 {
+        pub fn rust_l402() {
+            client::client_function();
+            wallet::wallet_function();
+            tokenstore::tokenstore_function();
+        }
+    }
+    
