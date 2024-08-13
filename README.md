@@ -1,5 +1,8 @@
 # Rust l402 Protocol🦀⚡
 
+:warn:**This library is under development.**
+:warn:**Beta version.**
+
 Rust L402 client module to consume L402 endpoints. 
 
 # About L402 Library
@@ -30,7 +33,7 @@ rust_l402 = "0.1.0"
 
 ## Example Usage
 
-This example demonstrates how to use the L402 client with the Alby wallet to make a request to the `rnd.ln.sulu.sh/randomnumber` API, which returns a random number.
+This example demonstrates how to use the L402 client with the LND wallet to make a request to the `rnd.ln.sulu.sh/randomnumber` API, which returns a random number.
 
 ### Quick Start
 
