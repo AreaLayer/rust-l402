@@ -16,7 +16,7 @@ mod wallet {
 }
 
 mod tokenstore {
-    use std::intrinsics::volatile_set_memory;
+    // use tonic_lnd::Client;
 
     pub fn tokenstore_function() {
         // Implementation goes here
