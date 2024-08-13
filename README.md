@@ -62,5 +62,5 @@ This example provides a quick overview of how to utilize the `rust_l402` crate f
 - [x] Wallet (LND)
 - [ ] Publish Crates
 - [ ] Cargo tests
-- [ ] Fix lib.rs
+- [x] Fix lib.rs
 - [ ] FOSS
