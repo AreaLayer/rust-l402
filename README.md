@@ -1,4 +1,4 @@
-# Rust l402 Library 🦀⚡
+# Rust l402 Protocol🦀⚡
 
 Rust L402 client module to consume L402 endpoints. 
 
