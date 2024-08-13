@@ -9,9 +9,7 @@ mod client {
 
 mod wallet {
     pub fn wallet_function() {
-        // Implementation goes here
-        wallet::wallet_function();
-        
+        // Implementation goes here        
     }
 }
 
@@ -20,9 +18,7 @@ mod tokenstore {
 
     pub fn tokenstore_function() {
         // Implementation goes here
-        tokenstore::tokenstore_function();
-        memory::memory_function();
-    }
+}
 }
 pub struct RustL402;
 
