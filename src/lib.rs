@@ -22,6 +22,7 @@ mod client {
             htlcs: vec![],
             payment_index: 0,
             failure_reason: 0,
+            payment_hash: vec![],
         };
     }
 }
