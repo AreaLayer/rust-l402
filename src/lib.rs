@@ -3,7 +3,7 @@ mod client {
 
     pub fn client_function() {
         // Implementation goes here
-        Self::client_function();
+        client_function();
     }
 }
 
