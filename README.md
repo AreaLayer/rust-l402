@@ -9,7 +9,7 @@ Rust L402 client module to consume L402 endpoints.
 ## Features
 
 - **L402 Client**: Composable L402 HTTP client to handle L402 API requests using Rust's `reqwest` library.
-- **Wallet Interface**: Facilitates invoice payments through various wallet implementations, starting with `Alby` wallet support.
+- **Wallet Interface**: Facilitates invoice payments through various wallet implementations, starting with `LND` wallet support.
 - **Token Store Interface**: Manages and stores L402 tokens, allowing for efficient retrieval based on URL, host, and path with support for closest match searching.
 
 ## Getting Started
