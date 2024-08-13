@@ -1,6 +1,5 @@
 mod client {
-    use tonic_lnd::Client;
-
+    // use tonic_lnd::Client;
     pub fn client_function() {
         // Implementation goes here
         loop {

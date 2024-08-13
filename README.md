@@ -57,4 +57,6 @@ This example provides a quick overview of how to utilize the `rust_l402` crate f
 - [x] Tokenstore
 - [x] Wallet (LND)
 - [ ] Publish Crates
-  
+- [ ] Cargo tests
+- [ ] Fix lib.rs
+- [ ] FOSS
