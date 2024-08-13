@@ -7,23 +7,6 @@ mod client {
     pub fn client_function() {
         // Implementation goes here
         let _rust_l402 = RustL402;
-        let _payment = Payment {
-            value: 0,
-            creation_date: 0,
-            fee: 0,
-            payment_preimage: vec![],
-            value_sat: 0,
-            value_msat: 0,
-            payment_request: String::new(),
-            status: 0,
-            fee_sat: 0,
-            fee_msat: 0,
-            creation_time_ns: 0,
-            htlcs: vec![],
-            payment_index: 0,
-            failure_reason: 0,
-            payment_hash: vec![],
-        };
     }
 }
 
@@ -42,9 +25,8 @@ mod tokenstore {
 
     pub fn tokenstore_function() {
         // Implementation goes here
-        let memory = Memory::new();
-    }}
-pub struct RustL402;
+        let memory = Vec::new();
+    }pub struct RustL402;
 
 impl RustL402 {
     pub fn rust_l402() {
