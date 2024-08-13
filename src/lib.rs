@@ -1,40 +1,42 @@
-mod client {
-    use lnd_grpc_tonic_client::lnrpc::Payment;
-
+pub mod client {
     use crate::tokenstore::RustL402;
-    // use tonic_lnd::Client;
+    // use lnd_grpc_tonic_client::lnrpc::Payment; // Uncomment if needed
+    // use tonic_lnd::Client; // Uncomment if needed
+
     pub fn client_function() {
         // Implementation goes here
-        let _rust_l402 = RustL402;
+        let _rust_l402 = RustL402::new();  // Assuming RustL402 has a constructor
     }
 }
 
-mod wallet {
-    use lnd_grpc_tonic_client::lnrpc::WalletAccountBalance;
+pub mod wallet {
+    // use lnd_grpc_tonic_client::lnrpc::WalletAccountBalance; // Uncomment if needed
 
     pub fn wallet_function() {
-        // Implementation goes here 
-
-        let wallet_account_balance: WalletAccountBalance = WalletAccountBalance::default();
+        // Implementation goes here
+        let _wallet_account_balance = (); // Placeholder for WalletAccountBalance
     }
 }
 
-mod tokenstore {
-    // use tonic_lnd::Client;
+pub mod tokenstore {
+    // use tonic_lnd::Client; // Uncomment if needed
 
     pub fn tokenstore_function() {
         // Implementation goes here
-        let memory: Vec<u8> = Vec::new();
+        let _memory: Vec<u8> = Vec::new(); // Assuming you are storing data in a Vec
     }
 
-pub struct RustL402;}
-    use crate::tokenstore::RustL402;
+    pub struct RustL402;
 
     impl RustL402 {
+        pub fn new() -> Self {
+            RustL402
+        }
+
         pub fn rust_l402() {
-            client::client_function();
-            wallet::wallet_function();
-            tokenstore::tokenstore_function();
+            crate::client::client_function();
+            crate::wallet::wallet_function();
+            crate::tokenstore::tokenstore_function();
         }
     }
-    
+}
