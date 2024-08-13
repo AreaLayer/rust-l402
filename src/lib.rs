@@ -3,7 +3,10 @@ mod client {
 
     pub fn client_function() {
         // Implementation goes here
-        client_function();
+        loop {
+            // Add your implementation logic here
+            // Break the loop when necessary
+        }
     }
 }
 
