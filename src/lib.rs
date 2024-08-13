@@ -8,7 +8,6 @@ mod client {
         // Implementation goes here
         let _rust_l402 = RustL402;
         let _payment = Payment {
-            payment_hash: vec![],
             value: 0,
             creation_date: 0,
             fee: 0,
