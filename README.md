@@ -1,8 +1,8 @@
 # Rust l402 Protocol🦀⚡
 
-:warn:**This library is under development.**
+⚠️**This library is under development.**
 
-:warn:**Beta version.**
+⚠️**Beta version.**
 
 Rust L402 client module to consume L402 endpoints. 
 
