@@ -1,10 +1,13 @@
 # Rust l402 Protocol🦀⚡
 
+[![Bitcoin-only](https://img.shields.io/badge/bitcoin-only-FF9900?logo=bitcoin)](https://twentyone.world)
+[![LN](https://img.shields.io/badge/lightning-792EE5?logo=lightning)](https://mempool.space/lightning)
+
+Rust L402 client module to consume L402 endpoints. 
+
 ⚠️**This library is under development.**
 
 ⚠️**Beta version.**
-
-Rust L402 client module to consume L402 endpoints. 
 
 # About L402 Library
 
