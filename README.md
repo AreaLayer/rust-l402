@@ -34,7 +34,7 @@ rust_l402 = "0.1.0"
 
 ## Example Usage
 
-This example demonstrates how to use the L402 client with the LND wallet to make a request to the `rnd.ln.sulu.sh/randomnumber` [API](https://docs.sulu.sh/docs/l402-demonstration), which returns a random number.
+This example demonstrates how to use the L402 client with the LND wallet to make a request to the `rnd.ln.sulu.sh/randomnumber` [API](https://docs.sulu.sh/docs/l402-demonstration) or via [FewSats](https://www.fewsats.com/), which returns a random number.
 
 ### Quick Start
 
