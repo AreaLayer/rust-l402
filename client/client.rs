@@ -65,7 +65,7 @@ fn parser_header(
     invoice: Invoice,
     header_key: HeaderKey,
     macaroon: Macaroon,
-    http: HTTP,
+    http: Htpp,
     hex: Hex,
 )
 {
