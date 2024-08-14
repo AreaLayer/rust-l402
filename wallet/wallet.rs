@@ -1,3 +1,5 @@
+mod wallet;
+
 pub(crate) fn wallet_function() {
     println!("This is a function in the wallet module.");
 
@@ -34,5 +36,5 @@ mod tests {
     use tokio;
     use std::error::Error;
     use std::time::Duration;
-    use tokio::time::timeout;
+    use tokio::time::Timeout;
 }
