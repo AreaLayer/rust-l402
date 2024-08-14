@@ -1,5 +1,9 @@
 [package]
 name = "rust_l402"
+authors = ["AreaLayer"]
+description = "Rust L402 Client"
+license = "MIT"
+repository = "https://github.com/AreaLayer/rust-l402"
 version = "0.1.0"
 edition = "2021"
 
