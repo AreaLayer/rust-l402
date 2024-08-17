@@ -5,9 +5,9 @@
 
 Rust L402 client module to consume L402 endpoints. 
 
-⚠️**This library is under development.**
+⚠️**This library is under development**
 
-⚠️**Beta version.**
+⚠️**Beta version**
 
 # About L402 Library
 
