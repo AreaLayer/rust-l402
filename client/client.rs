@@ -158,6 +158,7 @@ fn main() {
     let l402_client = L402Client::new();
     let invoice = Invoice::new();
     let macaroon = Macaroon::new();
+    let _preimage = Preimage::new();
 
     http_pays_invoice_with_client_and_l402_client(client, l402_client, invoice, macaroon);
     handle_payment_challenges(client, l402_client, invoice, macaroon);
