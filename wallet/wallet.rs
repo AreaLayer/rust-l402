@@ -5,10 +5,10 @@ mod wallet {
     pub(crate) fn wallet_function() {
         println!("This is a function in the wallet module.");
 
-        // Example preimage
-        let example_preimage = Preimage::new(b"example_preimage_data");
+        // Preimage
+        let preimage = Preimage::new(b"preimage_data");
 
-        // Example use of the preimage
+        // Use of the preimage
         println!("Created a new Preimage with data: {:?}", example_preimage.preimage);
     }
 
