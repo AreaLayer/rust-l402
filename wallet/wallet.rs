@@ -1,5 +1,9 @@
 mod wallet {
     use lnd_grpc::lnrpc::{wallet_unlocker_client::WalletUnlockerClient, UnlockWalletRequest, Preimage};
+    use alby_greenlight::{
+        alby_greenlight_client::AlbyGreenlightClient,
+        alby_greenlight_client::AlbyGreenlightClient::AlbyGreenlightClient,
+    };
     use std::error::Error;
 
     pub(crate) fn wallet_function() {

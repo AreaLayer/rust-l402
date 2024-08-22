@@ -66,6 +66,6 @@ This example provides a quick overview of how to utilize the `rust_l402` crate f
 - [x] Cargo tests
 - [x] Fix lib.rs
 - [x] FOSS 
-- [ ] Alby wallet (Greenlight)
+- [x] Alby wallet (Greenlight) [WIP]
 - [ ] Publish Crates
 - [ ] Nostr 
