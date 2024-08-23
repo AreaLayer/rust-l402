@@ -2,7 +2,7 @@ mod wallet {
     use lnd_grpc::lnrpc::{wallet_unlocker_client::WalletUnlockerClient, UnlockWalletRequest, Preimage};
     use alby_greenlight::{
         alby_greenlight_client::AlbyGreenlightClient,
-        alby_greenlight_client::AlbyGreenlightClient::AlbyGreenlightClient,
+        alby_greenlight_client::Preimage,
     };
     use std::error::Error;
 
