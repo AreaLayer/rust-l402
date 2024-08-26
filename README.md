@@ -67,5 +67,5 @@ This example provides a quick overview of how to utilize the `rust_l402` crate f
 - [x] Fix lib.rs
 - [x] FOSS 
 - [x] Alby wallet (Greenlight) [WIP]
-- [ ] Publish Crates
+- [x] Publish Crates
 - [ ] Nostr 
