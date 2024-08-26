@@ -19,4 +19,7 @@ members = [
     "client",
     "lnd-grpc-tonic-client",
     "tonic_lnd",
+    "wallet",
+    "lib",
+    "tokenstore",
 ]
