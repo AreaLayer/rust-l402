@@ -1387,6 +1387,7 @@ dependencies = [
  "lnd-grpc-tonic-client",
  "reqwest",
  "tonic_lnd",
+ "webpki 0.22.4",
 ]
 
 [[package]]
@@ -1418,7 +1419,7 @@ dependencies = [
  "log",
  "ring 0.16.20",
  "sct",
- "webpki",
+ "webpki 0.21.4",
 ]
 
 [[package]]
@@ -1787,7 +1788,7 @@ checksum = "bc6844de72e57df1980054b38be3a9f4702aba4858be64dd700181a8a6d0e1b6"
 dependencies = [
  "rustls 0.19.1",
  "tokio",
- "webpki",
+ "webpki 0.21.4",
 ]
 
 [[package]]
@@ -1982,7 +1983,7 @@ dependencies = [
  "tokio",
  "tonic 0.6.2",
  "tonic-build 0.5.2",
- "webpki",
+ "webpki 0.21.4",
 ]
 
 [[package]]
@@ -2239,6 +2240,16 @@ checksum = "b8e38c0608262c46d4a56202ebabdeb094cef7e560ca7a226c6bf055188aa4ea"
 dependencies = [
  "ring 0.16.20",
  "untrusted 0.7.1",
+]
+
+[[package]]
+name = "webpki"
+version = "0.22.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ed63aea5ce73d0ff405984102c42de94fc55a6b75765d621c65262469b3c9b53"
+dependencies = [
+ "ring 0.17.8",
+ "untrusted 0.9.0",
 ]
 
 [[package]]

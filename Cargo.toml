@@ -13,6 +13,7 @@ edition = "2021"
 lnd-grpc-tonic-client = "0.3.0"
 reqwest = "0.12.5"
 tonic_lnd = "0.5.1"
+webpki = "0.22.2"
 
 [crate.workspace]
 members = [
