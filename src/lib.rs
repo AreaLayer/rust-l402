@@ -37,6 +37,7 @@ pub mod tokenstore {
             crate::client::client_function();
             crate::wallet::wallet_function();
             crate::tokenstore::tokenstore_function();
+            // crate::payment::payment_function(); // Uncomment if needed
         }
     }
 }
