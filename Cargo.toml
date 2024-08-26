@@ -4,6 +4,7 @@ authors = ["AreaLayer"]
 description = "Rust L402 Client"
 license = "MIT"
 repository = "https://github.com/AreaLayer/rust-l402"
+homepage = "https://arealayer.net/products"
 tags = ["rust", "lnd", "grpc", "tonic", "client", "bitcoin", "lightning"]
 version = "0.1.0-beta"
 edition = "2021"
