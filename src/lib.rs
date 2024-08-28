@@ -2,6 +2,7 @@ pub mod client {
     use crate::tokenstore::RustL402;
     // use lnd_grpc_tonic_client::lnrpc::Payment; // Uncomment if needed
     // use tonic_lnd::Client; // Uncomment if needed
+    // use alby_greenlight_client::Client; // Uncomment if needed
 
     pub fn client_function() {
         // Implementation goes here
@@ -11,6 +12,7 @@ pub mod client {
 
 pub mod wallet {
     // use lnd_grpc_tonic_client::lnrpc::WalletAccountBalance; // Uncomment if needed
+    // use alby_greenlight_client::Client; // Uncomment if needed
 
     pub fn wallet_function() {
         // Implementation goes here
