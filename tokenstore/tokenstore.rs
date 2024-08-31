@@ -2,6 +2,12 @@ mod tokenstore {
     use std::collections::HashMap;
 
     pub(crate) fn tokenstore_function() {
+        let tokenstore_function();
+        let url_tokens = store.url_tokens();
+        let mut store = Store::new();
+        let mut memory_store = Store::new();
+        let mut HashMap = HashMap::new();
+
         println!("This is a function in the tokenstore module.");
     }
 

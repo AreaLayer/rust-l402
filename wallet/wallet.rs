@@ -7,6 +7,12 @@ mod wallet {
     use std::error::Error;
 
     pub(crate) fn wallet_function() {
+        let mut client = AlbyGreenlightClient::new("http://localhost:8080");
+        let mut client = lnd_grpc::lnrpc::wallet_unlocker_client::WalletUnlockerClient::connect("http://localhost:10009").await?;
+        let mut client = client.get_wallet_unlocker_client();
+        let mut preimage = Preimage::new(b"preimage_data");
+        let mut wallet_password = "wallet_password";
+    
         println!("This is a function in the wallet module.");
 
         // Preimage
