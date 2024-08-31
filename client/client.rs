@@ -20,6 +20,9 @@ pub fn call_client() {
 
 // Private function within the crate (module) for L402 logic
 pub(crate) fn l402() {
+    _l402_client_function();
+    _l402_function();
+    _invoice_function();
     println!("This is the L402 function.");
 }
 
