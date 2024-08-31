@@ -1,6 +1,14 @@
 mod client {
     // Define a client module with a function
     pub fn client_function() {
+        _l402_client_function();
+        _client_function();
+        _header_key_function();
+        _invoice_function();
+        _macaroon_function();
+        _wallet_function();
+        _store_function();
+        _macaroon_store_function();
         println!("Client function called.");
     }
 }
@@ -91,7 +99,9 @@ struct Preimage;
 impl Preimage {
     fn new() -> Preimage {
         println!("Preimage created.");
-        Preimage
+        Preimage;
+        let _preimage = _preimage;
+        let http_pays_invoice_with_client_and_l402_client = http_pays_invoice_with_client_and_l402_client;
     }
 }
 
