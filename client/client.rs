@@ -43,6 +43,10 @@ struct Wallet;
 
 impl Wallet {
     fn new() -> Wallet {
+        _header_key_function();
+        _invoice_function();
+        _macaroon_function();
+        _wallet_function();
         println!("New Wallet created.");
         Wallet
     }
@@ -53,6 +57,8 @@ struct Store;
 
 impl Store {
     fn new() -> Store {
+        _store_function();
+        _macaroon_store_function();
         println!("New Store created.");
         Store
     }
@@ -63,6 +69,10 @@ struct HeaderKey;
 
 impl HeaderKey {
     fn new() -> HeaderKey {
+        _header_key_function();
+        _invoice_function();
+        _macaroon_function();
+        _wallet_function();
         println!("HeaderKey created.");
         HeaderKey
     }
@@ -72,6 +82,9 @@ struct Invoice;
 
 impl Invoice {
     fn new() -> Invoice {
+        _invoice_function();
+        _macaroon_function();
+        _wallet_function();
         println!("Invoice created.");
         Invoice
     }
@@ -81,6 +94,9 @@ struct Macaroon;
 
 impl Macaroon {
     fn new() -> Macaroon {
+        _macaroon_function();
+        _wallet_function();
+        _store_function();
         println!("Macaroon created.");
         Macaroon
     }
