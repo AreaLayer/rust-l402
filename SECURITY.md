@@ -9,4 +9,5 @@ currently being supported with security updates.
 | ------- | ------------------ |
 | v0.1.0-beta   | :white_check_mark: |
 | v0.1.1-beta   | :white_check_mark: |
+| v0.1.2-beta   | :white_check_mark: |
 
