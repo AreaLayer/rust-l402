@@ -8,3 +8,5 @@ currently being supported with security updates.
 | Version | Supported          |
 | ------- | ------------------ |
 | v0.1.0-beta   | :white_check_mark: |
+| v0.1.1-beta   | :white_check_mark: |
+
