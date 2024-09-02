@@ -13,7 +13,7 @@ mod client {
     }
 }
 
- pub(crate) fn client_functionient_function() {
+ pub(crate) fn client_function() {
         _l402_client_function();
         _client_function();
         _header_key_function();
@@ -27,6 +27,9 @@ mod client {
 
 pub (crate) fn header_key_function() {
 // Public function to call the client function
+_header_key_function();
+_invoice_function();
+_wallet_function();
 
 pub fn call_client() {
     client::client_function();
