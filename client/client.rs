@@ -13,11 +13,31 @@ mod client {
     }
 }
 
+ pub(crate) fn client_functionient_function() {
+        _l402_client_function();
+        _client_function();
+        _header_key_function();
+        _invoice_function();
+        _macaroon_function();
+        _wallet_function();
+        _store_function();
+        _macaroon_store_function();
+        println!("Client function called.");
+    }
+
+pub (crate) fn header_key_function() {
+// Public function to call the client function
+
+pub fn call_client() {
+    client::client_function();
+}
+}
+pub (crate) fn invoice_function() {
 // Public function to call the client function
 pub fn call_client() {
     client::client_function();
 }
-
+}
 // Private function within the crate (module) for L402 logic
 pub(crate) fn l402() {
     _l402_client_function();

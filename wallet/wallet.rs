@@ -22,6 +22,33 @@ mod wallet {
         println!("Created a new Preimage with data: {:?}", example_preimage.preimage);
     }
 
+    pub(crate) fn unlock_wallet(
+        &mut self,
+        wallet_password: &str,
+    ) -> Result<(), Box<dyn Error>> {
+        let request = UnlockWalletRequest {
+            wallet_password: wallet_password.to_string(),
+        };
+        let _response = self.unlock_wallet(request).await?;
+        Ok(())
+    }
+
+    pub(crate) fn pre_image() -> PreImage {
+        PreImage {
+            preimage: vec![],
+            hash: vec![],
+            hash_type: 0,
+            timestamp: 0,
+            preimage_hash: vec![],
+        }
+    }
+
+    pub(crate) fn pre_image_hash() -> PreImageHash {
+        PreImageHash {
+            preimage_hash: vec![],
+        }
+    }
+
     impl WalletUnlockerClient {
         pub async fn unlock_wallet(
             &mut self,

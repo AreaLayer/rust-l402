@@ -11,6 +11,18 @@ mod tokenstore {
         println!("This is a function in the tokenstore module.");
     }
 
+    pub (crate)struct Store {
+        tokens: HashMap<String, bool>,
+        url_tokens: HashMap<String, bool>,
+    }
+
+    pub (crate) fn new() -> Self {
+        Self {
+            tokens: HashMap::new(),
+            url_tokens: HashMap::new(),
+        }
+    }
+
     // Define a struct for Store
     pub struct Store {
         tokens: HashMap<String, bool>,
