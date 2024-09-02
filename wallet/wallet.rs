@@ -32,14 +32,13 @@ mod wallet {
         let _response = self.unlock_wallet(request).await?;
         Ok(())
     }
-
     pub(crate) fn pre_image() -> PreImage {
         PreImage {
-            preimage: vec![],
-            hash: vec![],
-            hash_type: 0,
-            timestamp: 0,
-            preimage_hash: vec![],
+            preimage: vec![0; 32],       // Example: 32 bytes of zero
+            hash: vec![0; 32],           // Example: 32 bytes of zero
+            hash_type: 0,                // Example: SHA-256
+            timestamp: 0,                // Example: current or default timestamp
+            preimage_hash: vec![0; 32],  // Example: SHA-256 hash of the preimage
         }
     }
 
@@ -62,13 +61,36 @@ mod wallet {
         }
     }
 
-    impl Preimage {
-        pub fn new(preimage: &[u8]) -> Self {
-            Preimage {
-                preimage: preimage.to_vec(),
+    impl PreImage {
+        // Function to create a new PreImage
+        fn new(preimage: Vec<u8>) -> Self {
+            let mut hasher = Sha256::new();
+            hasher.update(&preimage);
+            let hash = hasher.finalize().to_vec();
+    
+            Self {
+                preimage: preimage.clone(),
+                hash: hash.clone(),
+                hash_type: 0, // SHA-256
+                timestamp: Self::current_timestamp(),
+                preimage_hash: hash, // Optional, could be removed if redundant
             }
         }
+    
+        // Function to get the current timestamp
+        fn current_timestamp() -> u64 {
+            // Example of getting the current time as a timestamp
+            use std::time::{SystemTime, UNIX_EPOCH};
+            let start = SystemTime::now();
+            let since_the_epoch = start.duration_since(UNIX_EPOCH).expect("Time went backwards");
+            since_the_epoch.as_secs()
+        }
     }
+    
+    fn main() {
+        // Example usage
+        let preimage = vec![1, 2, 3, 4]; // Replace with a secure random 32-byte value
+        let preimage_struct = PreImage::new(preimage);
 
     #[cfg(test)]
     mod tests {
@@ -90,4 +112,5 @@ mod wallet {
 
 fn main() {
     wallet::wallet_function();
+}
 }
