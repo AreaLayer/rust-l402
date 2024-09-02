@@ -43,17 +43,3 @@ pub mod tokenstore {
         }
     }
 }
-
-#[cfg(test)]
-mod tests {
-    use super::*;
-    use crate::tokenstore::RustL402;
-    use crate::wallet::wallet_function;
-    use crate::client::client_function;
-    use crate::tokenstore::tokenstore_function;
-    use std::fs::File;
-    use std::io::Write;
-    use std::path::Path;
-    use std::process::Command;
-    use std::str;
-}
