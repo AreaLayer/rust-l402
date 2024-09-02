@@ -5,6 +5,7 @@ mod wallet {
         alby_greenlight_client::Preimage,
     };
     use std::error::Error;
+    use sha2::{Sha256, Digest};
 
     pub(crate) fn wallet_function() {
         let mut client = AlbyGreenlightClient::new("http://localhost:8080");
