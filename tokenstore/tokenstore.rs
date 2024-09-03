@@ -1,6 +1,6 @@
 mod tokenstore {
     use std::collections::HashMap;
-
+// Define a struct for Store
     pub(crate) fn tokenstore_function() {
         let tokenstore_function();
         let url_tokens = store.url_tokens();
@@ -10,7 +10,7 @@ mod tokenstore {
 
         println!("This is a function in the tokenstore module.");
     }
-
+/// Define a struct for Store
     pub (crate)struct Store {
         tokens: HashMap<String, bool>,
         url_tokens: HashMap<String, bool>,

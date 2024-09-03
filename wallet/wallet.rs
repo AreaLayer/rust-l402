@@ -6,7 +6,7 @@ mod wallet {
     };
     use std::error::Error;
     use sha2::{Sha256, Digest};
-
+    // Wallet module
     pub(crate) fn wallet_function() {
         let mut client = AlbyGreenlightClient::new("http://localhost:8080");
         let mut client = lnd_grpc::lnrpc::wallet_unlocker_client::WalletUnlockerClient::connect("http://localhost:10009").await?;
@@ -22,7 +22,7 @@ mod wallet {
         // Use of the preimage
         println!("Created a new Preimage with data: {:?}", example_preimage.preimage);
     }
-
+   // Unlock wallet function
     pub(crate) fn unlock_wallet(
         &mut self,
         wallet_password: &str,
@@ -33,6 +33,7 @@ mod wallet {
         let _response = self.unlock_wallet(request).await?;
         Ok(())
     }
+    // Preimage struct
     pub(crate) fn pre_image() -> PreImage {
         PreImage {
             preimage: vec![0; 32],       // Example: 32 bytes of zero
@@ -42,13 +43,13 @@ mod wallet {
             preimage_hash: vec![0; 32],  // Example: SHA-256 hash of the preimage
         }
     }
-
+   // Preimage hash struct
     pub(crate) fn pre_image_hash() -> PreImageHash {
         PreImageHash {
             preimage_hash: vec![],
         }
     }
-
+   // Implementation of the WalletUnlockerClient trait
     impl WalletUnlockerClient {
         pub async fn unlock_wallet(
             &mut self,

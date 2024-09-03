@@ -12,7 +12,7 @@ mod client {
         println!("Client function called.");
     }
 }
-
+// Public function to call the client function
  pub(crate) fn client_function() {
         _l402_client_function();
         _client_function();
@@ -24,17 +24,19 @@ mod client {
         _macaroon_store_function();
         println!("Client function called.");
     }
-
+// Public function to header_key_function
 pub (crate) fn header_key_function() {
 // Public function to call the client function
 _header_key_function();
 _invoice_function();
 _wallet_function();
 
+// Public function to call the client function
 pub fn call_client() {
     client::client_function();
 }
 }
+// Public function to call invoic function
 pub (crate) fn invoice_function() {
 // Public function to call the client function
 pub fn call_client() {
