@@ -76,4 +76,5 @@ This example provides a quick overview of how to utilize the `rust_l402` crate f
 - [x] Alby wallet (Greenlight)
 - [x] Publish Crates
 - [ ] Nostr 
-- [ ] Fix issues and bugs
+- [x] Fix issues and bugs (WIP)
+- [ ] Mainnet/Testnet
