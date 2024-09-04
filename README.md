@@ -3,6 +3,7 @@
 [![Bitcoin-only](https://img.shields.io/badge/bitcoin-only-FF9900?logo=bitcoin)](https://twentyone.world)
 [![LN](https://img.shields.io/badge/lightning-792EE5?logo=lightning)](https://mempool.space/lightning)
 [![crates.io](https://img.shields.io/crates/v/rust-l402)](https://crates.io/crates/rust-l402)
+[![Rust](https://github.com/AreaLayer/rust-l402/actions/workflows/rust.yml/badge.svg)](https://github.com/AreaLayer/rust-l402/actions/workflows/rust.yml)
 
 Rust L402 client module to consume L402 endpoints. 
 
