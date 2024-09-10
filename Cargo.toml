@@ -15,6 +15,7 @@ reqwest = "0.12.7"
 tonic_lnd = "0.5.1"
 webpki = "0.22.2"
 sha2 = "0.10.8"
+nostr = "0.34.0"
 
 [crate.workspace]
 members = [
@@ -24,4 +25,5 @@ members = [
     "wallet",
     "lib",
     "tokenstore",
+    "example",
 ]
