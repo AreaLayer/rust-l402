@@ -74,3 +74,4 @@ This example provides a quick overview of how to utilize the `rust_l402` crate f
 - [x] Fix issues and bugs (WIP)
 - [ ] Mainnet/Testnet/Signet
 - [x] Documentation (WIP)
+- [ ] Proxy
