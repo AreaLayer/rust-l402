@@ -1,7 +1,6 @@
 pub mod client {
 
-    use crate::tokenstore::RustL402;
-    // use lnd_grpc_tonic_client::lnrpc::Payment; // Uncomment if needed
+    use crate::tokenstore::RustL402;   
     // use tonic_lnd::Client; // Uncomment if needed
     // use alby_greenlight_client::Client; // Uncomment if needed
 
