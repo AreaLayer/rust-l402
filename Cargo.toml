@@ -4,7 +4,7 @@ authors = ["AreaLayer"]
 description = "Rust L402 Client"
 license = "MIT"
 repository = "https://github.com/AreaLayer/rust-l402"
-homepage = "https://www.arealayer.net/products"
+homepage = "https://www.arealayer.net/projects"
 version = "0.1.3-beta"
 edition = "2021"
 
