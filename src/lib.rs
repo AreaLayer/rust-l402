@@ -39,7 +39,7 @@ pub mod wallet {
             let _payment_request = (); // Placeholder for payment request
             let _preimage = (); // Placeholder for preimage
             let _htlc_attempt = (); // Placeholder for HtlcAttempt
-            let tonic_lnd_client = (); // Placeholder for Tonic LND Client
+            let _tonic_lnd_client = (); // Placeholder for Tonic LND Client
         }
     }
 }
