@@ -1,9 +1,5 @@
 mod wallet {
     use lnd_grpc::lnrpc::{wallet_unlocker_client::WalletUnlockerClient, UnlockWalletRequest, Preimage};
-    use alby_greenlight::{
-        alby_greenlight_client::AlbyGreenlightClient,
-        alby_greenlight_client::Preimage,
-    };
     use std::error::Error;
     use sha2::{Sha256, Digest};
     // Wallet module
@@ -98,7 +94,6 @@ mod wallet {
     mod tests {
         use super::*;
         use lnd_grpc::lnrpc::wallet_unlocker_client::WalletUnlockerClient;
-        use alby_greenlight::alby_greenlight_client::AlbyGreenlightClient;
         use tokio;
 
         #[tokio::test]
