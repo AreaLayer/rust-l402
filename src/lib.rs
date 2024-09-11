@@ -1,6 +1,6 @@
 pub mod client {
 
-    use crate::tokenstore::RustL402;
+    use crate::tokenstore::proxy::RustL402;
 
     pub fn client_function() {
         let _rust_l402 = RustL402::new();  // Assuming RustL402 has a constructor
@@ -24,7 +24,7 @@ pub mod client {
 
 pub mod wallet {
 
-    use crate::tokenstore::RustL402;
+    use crate::tokenstore::proxy::RustL402;
 
     pub fn wallet_function() {
         let _rust_l402 = RustL402::new();  // Assuming RustL402 has a constructor
@@ -45,7 +45,7 @@ pub mod wallet {
 }
 
 pub mod tokenstore {
-
+    use proxy::RustL402;
 
     pub fn tokenstore_function() {
         // Assuming you are storing data in a Vec
@@ -57,7 +57,7 @@ pub mod tokenstore {
 
 pub mod nostr {
     pub fn nostr_function() {
-        use crate::tokenstore::RustL402;
+        use crate::tokenstore::proxy::RustL402;
 
         let _tokenstore: Vec<u8> = Vec::new();
         let _rust_l402 = RustL402::new();  // Assuming RustL402 has a constructor
@@ -67,6 +67,15 @@ pub mod nostr {
         let _invoice_request = (); // Placeholder for invoice request
     }
 }
+
+pub mod proxy {
+    pub fn proxy_function() {
+        let _rust_l402 = RustL402::new();  // Assuming RustL402 has a constructor
+        let _macaroon = (); // Placeholder for macaroon
+        let _invoice = (); // Placeholder for invoice
+        let _payment_request = (); // Placeholder for payment request
+        let _proxy_request = (); // Placeholder for proxy request
+    }
     pub struct RustL402;
 
     impl RustL402 {
@@ -79,6 +88,8 @@ pub mod nostr {
             crate::wallet::wallet_function();
             crate::tokenstore::tokenstore_function();
             crate::tokenstore::nostr::nostr_function();
+            crate::tokenstore::proxy::proxy_function();
         }
     }
+}
 }
