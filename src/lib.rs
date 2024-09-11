@@ -55,6 +55,18 @@ pub mod tokenstore {
         let _rust_l402 = RustL402::new();  // Assuming RustL402 has a constructor
     }
 
+pub mod nostr {
+    pub fn nostr_function() {
+        use crate::tokenstore::RustL402;
+
+        let _tokenstore: Vec<u8> = Vec::new();
+        let _rust_l402 = RustL402::new();  // Assuming RustL402 has a constructor
+        let _htlc_attempt = (); // Placeholder for HtlcAttempt
+        let _lnd_grpc_tonic_client = (); // Placeholder for Tonic LND Client
+        let _invoice = (); // Placeholder for invoice
+        let _invoice_request = (); // Placeholder for invoice request
+    }
+}
     pub struct RustL402;
 
     impl RustL402 {
@@ -66,6 +78,7 @@ pub mod tokenstore {
             crate::client::client_function();
             crate::wallet::wallet_function();
             crate::tokenstore::tokenstore_function();
+            crate::tokenstore::nostr::nostr_function();
         }
     }
 }
