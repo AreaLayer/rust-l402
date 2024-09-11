@@ -1,6 +1,7 @@
 use nostr::{Event, EventKind};
 use nostr::{ClientMessage, EventBuilder, Keys, Relay};
 use nostr::Zapper;
+use nostr::ZapperBackend::{NWC, WebLN};
 use rust_l402::client::L402Client;
 use tonic::transport::{Channel, ClientTlsConfig};
 use lnd_grpc::rpc::invoice::Invoice;
@@ -27,6 +28,8 @@ fn main() {
         payment_request: "test".to_string(),
         creation_date: 1234567890,
         settle_date: 1234567890,
+        nwc: None,
+        webln: None,
         invoice_type: lnd_grpc::rpc::invoice::InvoiceType::Unknown as i32,
         settle_index: 0,
     };
