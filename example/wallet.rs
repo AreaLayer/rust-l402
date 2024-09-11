@@ -1,4 +1,4 @@
-mod wallet {
+pub mod wallet {
     use lnd_grpc::lnrpc::{wallet_unlocker_client::WalletUnlockerClient, UnlockWalletRequest};
     use alby_greenlight::alby_greenlight_client::AlbyGreenlightClient;
     use sha2::{Sha256, Digest};

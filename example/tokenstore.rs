@@ -1,4 +1,4 @@
-mod tokenstore {
+pub mod tokenstore {
     use std::collections::HashMap;
 
     // Tokenstore function placeholder

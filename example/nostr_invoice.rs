@@ -10,7 +10,7 @@ use std::env;
 use std::error::Error;
 use tracing::{info, warn};
 
-mod lnd_grpc {
+pub mod lnd_grpc {
     tonic::include_proto!("lnrpc"); // Proto path for LND gRPC
 }
 

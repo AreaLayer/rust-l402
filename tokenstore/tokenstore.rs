@@ -1,4 +1,4 @@
-mod tokenstore {
+pub mod tokenstore {
     use std::collections::HashMap;
 // Define a struct for Store
     pub(crate) fn tokenstore_function() {

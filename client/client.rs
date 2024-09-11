@@ -1,4 +1,4 @@
-mod client {
+pub mod client {
     // Define a client module with a function
     pub fn client_function() {
         _l402_client_function();

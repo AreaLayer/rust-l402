@@ -1,4 +1,4 @@
-mod client {
+pub mod client {
     // Client function, calling all other functions in this module
     pub fn client_function() {
         _l402_client_function();
