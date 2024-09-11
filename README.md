@@ -2,6 +2,7 @@
 
 [![Bitcoin-only](https://img.shields.io/badge/bitcoin-only-FF9900?logo=bitcoin)](https://twentyone.world)
 [![LN](https://img.shields.io/badge/lightning-792EE5?logo=lightning)](https://mempool.space/lightning)
+[![Nostr](https://img.shields.io/badge/nostr-only-FF9900?)]((https://user-images.githubusercontent.com/99301796/223592277-34058d0e-af30-411d-8dfe-87c42dacdcf2.png))
 [![crates.io](https://img.shields.io/crates/v/rust-l402)](https://crates.io/crates/rust-l402)
 [![Rust](https://github.com/AreaLayer/rust-l402/actions/workflows/rust.yml/badge.svg)](https://github.com/AreaLayer/rust-l402/actions/workflows/rust.yml)
 ![Crates.io Total Downloads](https://img.shields.io/crates/d/rust-l402)
