@@ -1,0 +1,8 @@
+[package]
+name = "nostr"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+lnd_grpc_tonic_client = "0.3.0"
+nostr = "0.34.1"

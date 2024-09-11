@@ -1,0 +1,7 @@
+[package]
+name = "tokenstore"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+HashMap = "0.10.0"
