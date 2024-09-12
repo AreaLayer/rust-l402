@@ -22,6 +22,15 @@ pub mod client {
     }
 }
 
+pub mod example {
+
+    use crate::tokenstore::proxy::RustL402;
+
+    pub fn example_function() {
+        let _rust_l402 = RustL402::new();  // Assuming RustL402 has a constructor
+        _rust_l402.execute_rust_l402(); // Call the method directly
+    }
+}
 pub mod wallet {
 
     use crate::tokenstore::proxy::RustL402;
