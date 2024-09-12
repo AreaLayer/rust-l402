@@ -5,6 +5,7 @@ use nostr::ZapperBackend::{NWC, WebLN};
 use rust_l402::client::L402Client;
 use tonic::transport::{Channel, ClientTlsConfig};
 use lnd_grpc::rpc::invoice::Invoice;
+use lnd_grpc::rpc::invoice::{InvoiceState, InvoiceSettlement, InvoiceType};
 
 pub mod nostr {
     pub mod invoice_request {
@@ -91,3 +92,53 @@ async fn invoice_request(
     Ok(())
 }
 
+async fn invoice_state(
+    host: &str,
+    tls_config: Option<ClientTlsConfig>,
+    macaroon: Option<Vec<u8>>,
+    invoice: Invoice,
+) -> Result<(), Box<dyn std::error::Error>> {
+    let channel = Channel::from_static(host)
+        .tls_config(tls_config.unwrap())
+        .connect()
+        .await?;
+    let mut client = nostr::Client::new(relay);
+    let event = EventBuilder::new(EventKind::TextNote, &keys);
+    let zapper = Zapper::new(keys, client);
+    let event = EventBuilder::new(EventKind::TextNote, &keys);
+    Ok(())
+}
+
+async fn invoice_type(
+    host: &str,
+    tls_config: Option<ClientTlsConfig>,
+    macaroon: Option<Vec<u8>>,
+    invoice: Invoice,
+) -> Result<(), Box<dyn std::error::Error>> {
+    let channel = Channel::from_static(host)
+        .tls_config(tls_config.unwrap())
+        .connect()
+        .await?;
+    let mut client = nostr::Client::new(relay);
+    let event = EventBuilder::new(EventKind::TextNote, &keys);
+    let zapper = Zapper::new(keys, client);
+    let event = EventBuilder::new(EventKind::TextNote, &keys);
+    Ok(())
+}
+
+async fn invoice_setllement(
+    host: &str,
+    tls_config: Option<ClientTlsConfig>,
+    macaroon: Option<Vec<u8>>,
+    invoice: Invoice,
+) -> Result<(), Box<dyn std::error::Error>> {
+    let channel = Channel::from_static(host)
+        .tls_config(tls_config.unwrap())
+        .connect()
+        .await?;
+    let mut client = nostr::Client::new(relay);
+    let event = EventBuilder::new(EventKind::TextNote, &keys);
+    let zapper = Zapper::new(keys, client);
+    let event = EventBuilder::new(EventKind::TextNote, &keys);
+    Ok(())
+}
