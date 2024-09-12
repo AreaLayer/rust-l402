@@ -1,5 +1,6 @@
 pub mod wallet {
     use lnd_grpc::lnrpc::{wallet_unlocker_client::WalletUnlockerClient, UnlockWalletRequest, Preimage};
+    use lnd_grpc::Invoice::{InvoiceSettlement, InvoiceType, InvoiceState};
     use std::error::Error;
     use sha2::{Sha256, Digest};
     // Wallet module
@@ -84,7 +85,76 @@ pub mod wallet {
             since_the_epoch.as_secs()
         }
     }
-    
+
+         // Invoice struct
+         fn Invoice() -> Invoice {
+            Invoice {
+                 r#type: InvoiceType::Invoice,
+                 value: 1000,
+                 memo: "invoice_memo".to_string(),
+                 r#final: false,
+                 creation_date: 0,
+                 settle_date: 0,
+                 payment_request: "payment_request".to_string(),
+                 add_index: 0,
+                 settle_index: 0,
+                 amt_paid: 0,
+                 amt_paid_sat: 0,
+                 amt_paid_msat: 0,
+                 state: InvoiceState::Open,
+                 htlcs: vec![],
+                 features: vec![],
+                 is_keysend: false,
+                 is_canceled: false,
+                 is_replaceable: false,
+                 cooperative_close_address: "cooperative_close_address".to_string(),
+                 close_address: "close_address".to_string(),
+                 settle_address: "settle_address".to_string(),
+                 creation_date_str: "creation_date_str".to_string(),
+                 settle_date_str: "settle_date_str".to_string(),
+                 payment_request_str: "payment_request_str".to_string(),
+                 add_index_str: "add_index_str".to_string(),
+                 settle_index_str: "settle_index_str".to_string(),
+                 amt_paid_str: "amt_paid_str".to_string(),
+                 amt_paid_sat_str: "amt_paid_sat_str".to_string(),
+                 amt_paid_msat_str: "amt_paid_msat_str".to_string(),
+                 amt_paid_sat_str: "amt_paid_sat_str".to_string(),
+                 amt_paid_msat_str: "amt_paid_msat_str".to_string(),
+                 state_str: "state_str".to_string(),
+                 r#final_str: "final_str".to_string(),
+                 is_keysend_str: "is_keysend_str".to_string(),
+                 is_canceled_str: "is_canceled_str".to_string(),
+                 is_replaceable_str: "is_replaceable_str".to_string(),
+                 settle_address_str: "settle_address_str".to_string(),
+                 close_address_str: "close_address_str".to_string(),
+                 cooperative_close_address_str: "cooperative_close_address_str".to_string(),
+                 settle_address_str: "settle_address_str".to_string(),
+            };
+
+        // Invoice State, nvoice Settlement, Invoice Type struct
+
+        fn InvoiceState() -> InvoiceState {
+            InvoiceState {
+                state: InvoiceState::Open,
+                state_str: "Open".to_string(),
+            }
+        }
+
+        fn InvoiceSettlement() -> InvoiceSettlement {
+            InvoiceSettlement {
+                settlement: InvoiceSettlement::Settled,
+                settlement_str: "Settled".to_string(),
+            }
+        }
+
+        fn InvoiceType() -> InvoiceType {
+            InvoiceType {
+                r#type: InvoiceType::Invoice,
+                r#type_str: "Invoice".to_string(),
+            }
+        }
+
+         }
     fn main() {
         // Example usage
         let preimage = vec![1, 2, 3, 4]; // Replace with a secure random 32-byte value
