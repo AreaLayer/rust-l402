@@ -1,4 +1,4 @@
-# Rust l402 Protocol🦀⚡
+# Rust L402 Protocol🦀⚡
 
 [![Bitcoin-only](https://img.shields.io/badge/bitcoin-only-FF9900?logo=bitcoin)](https://twentyone.world)
 [![LN](https://img.shields.io/badge/lightning-792EE5?logo=lightning)](https://mempool.space/lightning)
@@ -16,7 +16,7 @@ Rust L402 client module to consume L402 endpoints.
 
 ⚠️**While this code hapanned many tests, it is still beta-quality experimental software. Use at your own risk. Independent audit is welcome.**
 
-# About L402 Client
+## About L402 Client
 
 `rust_l402` is a comprehensive Rust crate designed to simplify the integration and handling of L402 protocol payments within the Lightning Network ecosystem. This SDK offers convenient abstractions for wallet interactions, invoice payments, and token management, making it an essential tool for developers working on Rust-based applications requiring L402 API access.
 
