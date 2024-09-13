@@ -200,6 +200,25 @@ async fn PayRequest(
     let event = EventBuilder::new(EventKind::TextNote, &keys);
     Ok(())
     }
+
+async fn CrateInvoice(
+    relay: &str,
+    host: &str,
+    tls_config: Option<ClientTlsConfig>,
+    macaroon: Option<Vec<u8>>,
+    invoice: Invoice,
+    invoice_state: lnd_grpc::rpc::invoice::InvoiceState,
+    )
+    -> Result<(), Box<dyn std::error::Error>> {
+    let channel = Channel::from_static(host)
+        .tls_config(tls_config.unwrap())
+        .connect()
+        .await?;
+    let mut client = NostrWalletURI::new(relay);
+    let event = EventBuilder::new(EventKind::TextNote, &keys);
+    Ok(())
+    }
+
 async fn PayInvoice(
     relay: &str,
     host: &str,
@@ -216,5 +235,39 @@ async fn PayInvoice(
     let event = EventBuilder::new(EventKind::TextNote, &keys);
     let zapper = Zapper::new(keys, client);
     let event = EventBuilder::new(EventKind::TextNote, &keys);
+    Ok(())
+}
+
+async fn LookupInvoice(
+    relay: &str,
+    host: &str,
+    tls_config: Option<ClientTlsConfig>,
+    macaroon: Option<Vec<u8>>,
+    invoice: Invoice,
+    invoice_state: lnd_grpc::rpc::invoice::InvoiceState,
+    )
+    ->Result<(), Box<dyn std::error::Error>> {
+    let channel = Channel::from_static(host)
+        .tls_config(tls_config.unwrap())
+        .connect()
+        .await?;
+    let mut client = nostr::Client::new(relay);
+    let event = EventBuilder::new(EventKind::TextNote, &keys);
+    let zapper = Zapper::new(keys, client);
+    let event = EventBuilder::new(EventKind::TextNote, &keys);
+    Ok(())
+}
+
+async fn GetBalance(
+    relay: &str,
+    host: &str,
+    tls_config: Option<ClientTlsConfig>,
+    macaroon: Option<Vec<u8>>,
+    invoice: Invoice,
+    invoice_state: lnd_grpc::rpc::invoice::InvoiceState,
+) -> Result<(), Box<dyn std::error::Error>> {
+  let mut client = nostr::Client::new(relay);
+    let event = EventBuilder::new(EventKind::TextNote, &keys);
+    let zapper = Zapper::new(keys, client);
     Ok(())
 }
