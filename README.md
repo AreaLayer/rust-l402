@@ -6,6 +6,7 @@
 [![crates.io](https://img.shields.io/crates/v/rust-l402)](https://crates.io/crates/rust-l402)
 [![Rust](https://github.com/AreaLayer/rust-l402/actions/workflows/rust.yml/badge.svg)](https://github.com/AreaLayer/rust-l402/actions/workflows/rust.yml)
 ![Crates.io Total Downloads](https://img.shields.io/crates/d/rust-l402)
+[![Documentation](https://img.shields.io/static/v1?logo=read-the-docs&label=docs.rs&message=ddk&color=informational)](https://docs.rs/rust_l402/latest/rust_l402/)
 
 
 Rust L402 client module to consume L402 endpoints. 
