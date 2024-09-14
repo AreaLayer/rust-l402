@@ -219,3 +219,16 @@ fn main() {
     parser_header(invoice, HeaderKey::new(), macaroon);
     preimage();
 }
+#[cfg(test)]
+mod tests {
+    use lnd_grpc::Invoice::{InvoiceType, InvoiceSettlement, InvoiceState};
+    use rust_l402::client::Preimage;
+    fn main () {
+        let mut client = NostrWalletURI::new(relay);
+    let event = EventBuilder::new(EventKind::TextNote, &keys);
+    let zapper = Zapper::new(keys, client);
+    let event = EventBuilder::new(EventKind::TextNote, &keys);
+    let preimage = Preimage::new();
+    Ok(())
+    }
+}

@@ -54,3 +54,19 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     Ok(())
 }
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use tonic::transport::Channel;
+    use tonic::Request;
+    use proxy_proto::proxy_server::Proxy;
+
+    fn test_my_method() {
+        let mut client = ProxyClient::connect("http://[::1]:50051").await.unwrap();
+        let request = Request::new(L402ProxyRequest {
+            message: "Hello from client".into(),
+        });
+        let response = client.my_method(request).await.unwrap();
+        assert_eq!(response.into_inner().message, "Hello from proxy");
+    }
+}

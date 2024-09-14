@@ -271,3 +271,15 @@ async fn GetBalance(
     let zapper = Zapper::new(keys, client);
     Ok(())
 }
+#[cfg(test)]
+mod tests {
+    use lnd_grpc::Invoice::{InvoiceType, InvoiceSettlement, InvoiceState};
+    use nostr::nwc::{PayRequest, PaySend};
+    fn main () {
+        let mut client = NostrWalletURI::new(relay);
+    let event = EventBuilder::new(EventKind::TextNote, &keys);
+    let zapper = Zapper::new(keys, client);
+    let event = EventBuilder::new(EventKind::TextNote, &keys);
+    Ok(())
+    }
+}

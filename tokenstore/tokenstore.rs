@@ -101,3 +101,14 @@ fn main() {
     let _ = store.url_tokens();
     let _ = memory.url_tokens();
 }
+#[cfg(test)]
+mod tests {
+    use superer::*;
+    use tokenstore::*;
+    #[test]
+    fn test_store_add_token() {
+        let mut store = Store::new();
+        store.add_token("token1".to_string());
+        assert!(store.tokens.contains_key("token1"));
+    }
+}
