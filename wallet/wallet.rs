@@ -3,6 +3,12 @@ pub mod wallet {
     use lnd_grpc::Invoice::{InvoiceSettlement, InvoiceType, InvoiceState};
     use std::error::Error;
     use sha2::{Sha256, Digest};
+    // Pub struct to wallet
+    pub struct Wallet {
+        pub(crate) client: WalletUnlockerClient,
+        pub(crate) preimage: Preimage,
+        pub(crate) wallet_password: String,
+    }
     // Wallet module
     pub(crate) fn wallet_function() {
         let mut client = AlbyGreenlightClient::new("http://localhost:8080");

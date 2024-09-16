@@ -4,6 +4,21 @@ use rust_l042::Tokenstore;
 use std::sync::Arc;
 use tokio::sync::Mutex;
 
+// Pub crate to Proxy
+pub fn new(token_store: Arc<Mutex<Tokenstore>>, http_client: reqwest::Client, lnd_url: String, lnd_macaroon: String) -> Self {
+    Proxy {
+        token_store,
+        http_client,
+        lnd_url,
+        lnd_macaroon,
+    }
+}// Pub struct to Proxy
+pub struct Proxy {
+    token_store: Arc<Mutex<Tokenstore>>,
+    http_client: reqwest::Client,
+    lnd_url: String,
+    lnd_macaroon: String,
+}
 // Define your gRPC service trait here
 pub mod l402_proxy {
     tonic::include_proto!("l402_proxy");
