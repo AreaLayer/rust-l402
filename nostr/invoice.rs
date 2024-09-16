@@ -8,6 +8,7 @@ use tonic::transport::{Channel, ClientTlsConfig};
 use lnd_grpc::rpc::invoice::Invoice;
 use lnd_grpc::rpc::invoice::{InvoiceState, InvoiceSettlement, InvoiceType};
 
+pub(crate) use nostr::invoice_request::invoice_request_client::InvoiceRequestClient;
 pub mod nostr {
     pub mod invoice_request {
         tonic::include_proto!("invoice_request");
