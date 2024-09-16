@@ -1,6 +1,6 @@
 use nostr::{Event, EventKind};
 use nostr::{ClientMessage, EventBuilder, Keys, Relay};
-use nostr::nwc::{NostrWalletURI, Subscribe, PayInvoice, PayRequest , PaySend, CrateInvoice, LookupInvoice, GetBalance};
+use nostr::nwc::{NostrWalletURI, Subscribe, PayInvoice, PayRequest , PaySend, CreateInvoice, LookupInvoice, GetBalance};
 use nostr::Zapper;
 use nostr::ZapperBackend::{NWC, WebLN};
 use rust_l402::client::L402Client;
@@ -18,7 +18,7 @@ fn main() {
     let keys = Keys::generate();
     let relay = Relay::new("wss://relay.damus.io");
     let mut relay = relay.connect().unwrap();
-    let mut client = L402Client::new("http://localhost:8080");
+    let mut client = L402Client::new("http://localhost:8080"); // Replace for API endpoint
     let invoice = Invoice {
         memo: "test".to_string(),
         value: 1000,
@@ -42,7 +42,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let keys = Keys::generate();
     let relay = Relay::new("wss://relay.damus.io");
     let mut relay = relay.connect().unwrap();
-    let mut client = L402Client::new("http://localhost:8080");
+    let mut client = L402Client::new("http://localhost:8080"); // Replace for API endpoint
     let invoice = Invoice {
         memo: "test".to_string(),
         value: 1000,
@@ -58,7 +58,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         settle_index: 0,
     };
 }
-
+// Connect to LND
 async fn connect_to_lnd(
     host: &str,
     tls_config: Option<ClientTlsConfig>,
@@ -75,7 +75,7 @@ async fn connect_to_lnd(
     let event = EventBuilder::new(EventKind::TextNote, &keys);
     Ok(())
 }
-
+// Invoice request
 async fn invoice_request(
     host: &str,
     tls_config: Option<ClientTlsConfig>,
@@ -92,7 +92,7 @@ async fn invoice_request(
     let event = EventBuilder::new(EventKind::TextNote, &keys);
     Ok(())
 }
-
+// Invoice State
 async fn invoice_state(
     host: &str,
     tls_config: Option<ClientTlsConfig>,
@@ -109,7 +109,7 @@ async fn invoice_state(
     let event = EventBuilder::new(EventKind::TextNote, &keys);
     Ok(())
 }
-
+// Invoice Type
 async fn invoice_type(
     host: &str,
     tls_config: Option<ClientTlsConfig>,
@@ -126,7 +126,7 @@ async fn invoice_type(
     let event = EventBuilder::new(EventKind::TextNote, &keys);
     Ok(())
 }
-
+// Invoice Settlement
 async fn invoice_setllement(
     host: &str,
     tls_config: Option<ClientTlsConfig>,
@@ -143,7 +143,7 @@ async fn invoice_setllement(
     let event = EventBuilder::new(EventKind::TextNote, &keys);
     Ok(())
 }
-
+// Nostr Wallet URI
 async fn NostrWalletURI(
     relay: &str,
     host: &str,
@@ -163,7 +163,7 @@ async fn NostrWalletURI(
     let event = EventBuilder::new(EventKind::TextNote, &keys);
     Ok(())
 }
-
+// Subscribe
 async fn Subscribe(
     kind: &str,
     author: &str,
@@ -180,7 +180,7 @@ async fn Subscribe(
     let event = EventBuilder::new(EventKind::TextNote, &keys);
     Ok(())
 }
-
+// Pay Request
 async fn PayRequest(
     relay: &str,
     host: &str,
@@ -200,8 +200,8 @@ async fn PayRequest(
     let event = EventBuilder::new(EventKind::TextNote, &keys);
     Ok(())
     }
-
-async fn CrateInvoice(
+// Create Invoice
+async fn CreateInvoice(
     relay: &str,
     host: &str,
     tls_config: Option<ClientTlsConfig>,
@@ -218,7 +218,7 @@ async fn CrateInvoice(
     let event = EventBuilder::new(EventKind::TextNote, &keys);
     Ok(())
     }
-
+// Pay Invoice
 async fn PayInvoice(
     relay: &str,
     host: &str,
@@ -237,7 +237,7 @@ async fn PayInvoice(
     let event = EventBuilder::new(EventKind::TextNote, &keys);
     Ok(())
 }
-
+// Lookup Invoice
 async fn LookupInvoice(
     relay: &str,
     host: &str,
@@ -257,7 +257,7 @@ async fn LookupInvoice(
     let event = EventBuilder::new(EventKind::TextNote, &keys);
     Ok(())
 }
-
+// Get Balance
 async fn GetBalance(
     relay: &str,
     host: &str,
