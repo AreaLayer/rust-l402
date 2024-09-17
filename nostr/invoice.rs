@@ -11,12 +11,17 @@ use lnd_grpc::rpc::invoice::{InvoiceState, InvoiceSettlement, InvoiceType};
 // Pub crate to Nostr
 pub(crate) use nostr::invoice_request::invoice_request_client::InvoiceRequestClient;
 
-// Pub struct
-
+// Pub struct NostrWalletURI 
 pub struct NostrWalletURI {
     relay: Relay,
     keys: Keys,
     client: NostrWalletURI,
+}
+
+// Pub struct ZappperBackend
+pub enum ZapperBackend {
+    NWC,
+    WebLN,
 }
 // Pub mod to Nostr
 pub mod nostr {
