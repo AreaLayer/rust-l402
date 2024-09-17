@@ -1744,7 +1744,7 @@ dependencies = [
 
 [[package]]
 name = "rust_l402"
-version = "0.1.3-beta"
+version = "2.0.0-beta.rc1"
 dependencies = [
  "lnd-grpc-tonic-client",
  "nostr",
