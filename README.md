@@ -72,7 +72,5 @@ This example provides a quick overview of how to utilize the `rust_l402` crate f
 
 ## Roadmap
 
-- [x] Nostr 
 - [x] Fix issues and bugs (WIP)
 - [x] Documentation (WIP)
-- [x] Proxy
