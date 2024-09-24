@@ -1,5 +1,10 @@
 # Rust L402 development
 
+## v2.0.0-beta.2
+
+- Added Rust Nostr updates
+- Added Tonic support to HTTP Client and Server
+
 ## v2.0.0-beta.1
 
 - Pre release of the new version of the library.
