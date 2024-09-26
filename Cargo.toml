@@ -9,13 +9,12 @@ version = "2.0.0-beta.2"
 edition = "2021"
 
 [dependencies]
-lnd-grpc-tonic-client = "0.3.0"
+lnd_grpc_rust = { git = "https://github.com/niteshbalusu11/lnd-grpc-rust.git", branch = "master" }
 reqwest = "0.12.7"
-tonic_lnd = "0.5.1"
 webpki = "0.22.4"
 sha2 = "0.10.8"
 nostr = "0.35.0"
-tonic = "=0.12.2"
+tokio = "1.40.0"
 
 [package.metadata]
 tags = ["rust", "lnd", "grpc", "tonic", "client", "bitcoin", "lightning"]
