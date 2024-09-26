@@ -12,7 +12,6 @@ pub mod wallet {
     }
     // Wallet module
     pub(crate) fn wallet_function() {
-        let mut client = AlbyGreenlightClient::new("http://localhost:8080");
         let mut client = lnd_grpc::lnrpc::wallet_unlocker_client::WalletUnlockerClient::connect("http://localhost:10009").await?;
         let mut client = client.get_wallet_unlocker_client();
         let mut preimage = Preimage::new(b"preimage_data");

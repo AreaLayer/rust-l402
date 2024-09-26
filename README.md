@@ -74,3 +74,5 @@ This example provides a quick overview of how to utilize the `rust_l402` crate f
 
 - [x] Fix issues and bugs (WIP)
 - [x] Documentation (WIP)
+- [ ] Change old Tonic LND/lnd-grpc-tonic-client to LND gRPC Rust
+- [x] LND gRPC Rust tests
