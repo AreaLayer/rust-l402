@@ -1049,7 +1049,8 @@ checksum = "78b3ae25bc7c8c38cec158d1f2757ee79e9b3740fbc7ccf0e59e4b08d793fa89"
 [[package]]
 name = "lnd_grpc_rust"
 version = "2.8.0"
-source = "git+https://github.com/niteshbalusu11/lnd-grpc-rust.git?branch=master#a185149592bb023f3232cd1ea99cdce96cb54f27"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d4f2dd7b53caff596775c5bcf1e98b63f9b7369845f8723dab9e2aac79fefd4c"
 dependencies = [
  "hex",
  "hyper 0.14.30",

@@ -9,7 +9,7 @@ version = "2.0.0-beta.2"
 edition = "2021"
 
 [dependencies]
-lnd_grpc_rust = { git = "https://github.com/niteshbalusu11/lnd-grpc-rust.git", branch = "master" }
+lnd_grpc_rust = "2.8.0"
 reqwest = "0.12.7"
 webpki = "0.22.4"
 sha2 = "0.10.8"
