@@ -68,6 +68,19 @@ fn main() {
 }
 ```
 
+### Detailed Usage
+```rust
+use rust_l402::{L402Client, L402Wallet};
+fn main() {
+    // Initialize the wallet and client
+    let wallet = L402Wallet::new(wallet_type);
+    let client = L402Client::new(wallet);
+    // Make a request to the API
+    let response = client.get("https://rnd.ln.sulu.sh/randomnumber").send().unwrap();
+    // Print the response
+    println!("Response: {}", response.text().unwrap());
+}
+
 This example provides a quick overview of how to utilize the `rust_l402` crate for making payments and handling L402 API requests in a Rust-based application.
 
 ## Roadmap
