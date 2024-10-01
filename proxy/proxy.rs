@@ -4,6 +4,8 @@ use rust_l042::Tokenstore;
 use std::sync::Arc;
 use tokio::sync::Mutex;
 
+pub mod proxy; // Make sure this line is present
+
 // Pub crate to Proxy
 pub fn new(token_store: Arc<Mutex<Tokenstore>>, http_client: reqwest::Client, lnd_url: String, lnd_macaroon: String) -> Self {
     Proxy {
