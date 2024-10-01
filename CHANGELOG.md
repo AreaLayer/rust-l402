@@ -2,7 +2,14 @@
 
 See last changes in the library.
 
-## v2.0.0 
+## v2.0.1-beta
+
+- Fixed crates
+- Fixed version
+- Minimal version of the library
+
+
+## v2.0.0-beta
 
 
 - Breaking changes in lib, wallet, client and tokenstore

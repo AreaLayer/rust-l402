@@ -5,7 +5,7 @@ description = "Rust L402 Client"
 license = "MIT"
 repository = "https://github.com/AreaLayer/rust-l402"
 homepage = "https://www.arealayer.net/projects"
-version = "2.0.0-beta"
+version = "2.0.1-beta"
 edition = "2021"
 
 [dependencies]
