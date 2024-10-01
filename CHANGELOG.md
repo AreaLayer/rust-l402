@@ -1,5 +1,17 @@
 # Rust L402 development
 
+See last changes in the library.
+
+## v2.0.0 
+
+
+- Breaking changes in lib, wallet, client and tokenstore
+- New features: Proxy and Nostr with `NWC`wallet 
+- Added Invoice to Nostr and LND Wallet
+- Fixed bugs 
+- Minimal documentation almost complete
+- LND gRPC rust support
+
 ## v2.0.0-beta.2
 
 - Added Rust Nostr updates

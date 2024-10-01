@@ -1646,7 +1646,7 @@ dependencies = [
 
 [[package]]
 name = "rust_l402"
-version = "2.0.0-beta.2"
+version = "2.0.0-beta"
 dependencies = [
  "lnd_grpc_rust",
  "nostr",
