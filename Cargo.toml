@@ -16,6 +16,10 @@ sha2 = "0.10.8"
 nostr = "0.35.0"
 tokio = "1.40.0"
 
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
+
 [package.metadata]
 tags = ["rust", "lnd", "grpc", "tonic", "client", "bitcoin", "lightning"]
 
