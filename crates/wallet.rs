@@ -15,3 +15,18 @@ impl Wallets {
         self.wallets.push(wallet);
     }
 }
+#[cfg(test)]
+mod tests {
+    use super::*;
+    #[test]
+    fn test_add_wallet() {
+        let mut wallets = Wallets::new();
+        let wallet = Wallet::new();
+        wallets.add_wallet(wallet);
+        assert
+        (
+                wallets.wallets.len() == 1,
+                "Wallets should have 1 wallet"
+            );
+    }
+}
