@@ -1,10 +1,13 @@
 use crate::Paywall;
-use lnd_grpc::LightningClient;
+use lnd_grpc_rust::LightningClient;
+use lnd_grpc_rust::LND;
+use lnd_grpc_rust::Macroon;
 
 pub struct Paywall {
     pub client: LightningClient,
     pub l402: bool,
     pub url: String,
+    pub macroon: String,
     pub paywall_id: String,
     pub paywall_secret: String,
     pub paywall_secret_hash: String,
