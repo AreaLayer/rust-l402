@@ -30,6 +30,8 @@ Rust L402 client module to consume L402 endpoints.
 - **Token Store Interface**: Manages and stores L402 tokens, allowing for efficient retrieval based on URL, host, and path with support for closest match searching.
 - **Proxy**: Provides a proxy service to handle L402 API requests, allowing for seamless integration with various L402-compliant payment gateways.
 - **Nostr**: Integrates with the Nostr protocol for secure and decentralized communication and `NWC` wallet support.
+- **NWC Wallet**: Supports the NWC (Nostr Wallet Connect) protocol for secure and decentralized communication and wallet management.
+- **Paywall**: Enables the creation of paywalls for content access, supporting both L402 and Nostr-based paywalls.
 
 ## Getting Started
 
