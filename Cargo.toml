@@ -23,15 +23,3 @@ rustdoc-args = ["--cfg", "docsrs"]
 [package.metadata]
 tags = ["rust", "lnd", "grpc", "tonic", "client", "bitcoin", "lightning"]
 
-[crate.workspace]
-members = [
-    "client",
-    "lnd-grpc-tonic-client",
-    "tonic_lnd",
-    "wallet",
-    "lib",
-    "tokenstore",
-    "example",
-    "nostr",
-    "proxy",
-]
