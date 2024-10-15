@@ -2,6 +2,12 @@
 
 See last changes in the library.
 
+## v2.0.2-beta
+
+- Fixed bugs and crates
+- Added documentation
+- Added Paywall
+
 ## v2.0.1-beta
 
 - Fixed crates
