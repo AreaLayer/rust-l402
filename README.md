@@ -38,7 +38,7 @@ Rust L402 client module to consume L402 endpoints.
 ### Prerequisites
 
 - Rust version 1.80 or higher
-- Access to an L402 compliant payment gateway
+- Access to an L402 compliant payment gateway (API)
 
 ### Installation
 
