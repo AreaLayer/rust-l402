@@ -8,7 +8,6 @@
 ![Crates.io Total Downloads](https://img.shields.io/crates/d/rust-l402)
 [![Documentation](https://img.shields.io/static/v1?logo=read-the-docs&label=docs.rs&message=rust_l402&color=informational)](https://docs.rs/rust_l402/latest/rust_l402/)
 
-
 Rust L402 client module to consume L402 endpoints. 
 
 ⚠️**This client is under development**
