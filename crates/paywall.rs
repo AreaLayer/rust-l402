@@ -41,6 +41,8 @@ impl Paywall {
             paywall_id,
             paywall_secret,
             paywall_secret_hash,
+            macroon: String::new(),
+            
         }
     }
 }
