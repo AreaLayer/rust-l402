@@ -45,7 +45,7 @@ To start using the Rust L402 SDK, add it to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-rust_l402 = "2.0.1-beta"
+rust_l402 = "2.0.3-beta"
 ```
 
 ## Example Usage
