@@ -16,6 +16,11 @@ pub mod wallet {
         let mut client = client.get_wallet_unlocker_client();
         let mut preimage = Preimage::new(b"preimage_data");
         let mut wallet_password = "wallet_password";
+        let mut wallet = Wallet {
+            client,
+            preimage,
+            wallet_password: wallet_password.to_string(),
+        };
     
         println!("This is a function in the wallet module.");
 
