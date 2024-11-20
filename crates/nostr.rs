@@ -20,7 +20,8 @@ impl NostrClient {
 
 impl Client for NostrClient {
     fn send(&self, message: Message) -> Result<(), Error> {
-        todo!()
+        // TODO: Implement the send method
+        Ok(())
     }
 }
 
