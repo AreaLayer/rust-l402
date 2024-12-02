@@ -2,6 +2,15 @@
 
 See last changes in the library.
 
+## v2.0.4-beta
+
+- Fixed bugs
+
+## v2.0.3-beta
+
+- Fixed bugs
+- Added documentation
+
 ## v2.0.2-beta
 
 - Fixed bugs and crates

@@ -1,6 +1,6 @@
 [package]
 name = "crates"
-version = "2.1.0-beta"
+version = "2.1.4-beta"
 edition = "2021"
 
 [dependencies]
