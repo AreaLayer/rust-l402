@@ -1,12 +1,16 @@
+// Import necessary modules from the crate
 use crate::Proxy;
 
-pub (crate) struct ProxyFunction;
+/// Represents the ProxyFunction struct.
+pub(crate) struct ProxyFunction;
 
+/// A private function related to L402 proxy handling.
 fn _l402_proxy_function() {
     println!("l402_proxy_function");
 }
+
 impl ProxyFunction {
-    // Define a proxy module with a function
+    /// Defines a proxy module with various sub-functions.
     pub fn proxy_function() {
         _l402_proxy_function();
         _proxy_function();
@@ -21,12 +25,46 @@ impl ProxyFunction {
     }
 }
 
+/// A placeholder function for proxy handling.
+fn _proxy_function() {
+    println!("_proxy_function");
+}
+
+/// Placeholder for handling header keys.
+fn _header_key_function() {
+    println!("_header_key_function");
+}
+
+/// Placeholder for handling invoices.
+fn _invoice_function() {
+    println!("_invoice_function");
+}
+
+/// Placeholder for handling macaroons.
+fn _macaroon_function() {
+    println!("_macaroon_function");
+}
+
+/// Placeholder for wallet handling.
+fn _wallet_function() {
+    println!("_wallet_function");
+}
+
+/// Placeholder for store handling.
+fn _store_function() {
+    println!("_store_function");
+}
+
+/// Placeholder for macaroon store handling.
+fn _macaroon_store_function() {
+    println!("_macaroon_store_function");
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::Proxy;
-    use crate::ProxyFunction;
 
+    /// Tests the `proxy_function` of the `ProxyFunction` struct.
     fn test_proxy_function() {
         ProxyFunction::proxy_function();
     }
