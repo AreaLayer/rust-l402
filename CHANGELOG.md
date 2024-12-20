@@ -2,6 +2,10 @@
 
 See last changes in the library.
 
+## v2.0.5-beta
+
+- Fixed bugs and issues
+
 ## v2.0.4-beta
 
 - Fixed bugs

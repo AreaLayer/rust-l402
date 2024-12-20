@@ -5,7 +5,7 @@ description = "Rust L402 Client"
 license = "MIT"
 repository = "https://github.com/AreaLayer/rust-l402"
 homepage = "https://www.arealayer.net/projects"
-version = "2.0.4-beta"
+version = "2.0.5-beta"
 edition = "2021"
 
 [dependencies]
@@ -15,6 +15,7 @@ webpki = "0.22.4"
 sha2 = "0.10.8"
 nostr = "0.37.0"
 tokio = "1.42.0"
+idna = "1.0.0"
 
 [package.metadata.docs.rs]
 all-features = true
