@@ -34,6 +34,7 @@ Rust L402 client module to consume L402 endpoints by using the [L402 Protocol](h
 
 - Rust version 1.80 or higher
 - Access to an L402 compliant payment gateway (API)
+- Nostr wallet (optional)
 
 ### Installation
 
