@@ -81,3 +81,7 @@ fn main() {
 ```
 
 **This example provides a quick overview of how to utilize the `rust_l402` crate for making payments and handling L402 API requests in a Rust-based application.**
+
+## Roadmap
+
+- [ ] Out of beta
