@@ -85,3 +85,4 @@ fn main() {
 ## Roadmap
 
 - [ ] Out of beta
+- [ ] L402 version
