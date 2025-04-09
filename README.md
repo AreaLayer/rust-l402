@@ -86,3 +86,4 @@ fn main() {
 
 - [ ] Out of beta
 - [ ] L402 version
+- [ ] Taproot Assets compatible
