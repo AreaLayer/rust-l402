@@ -13,7 +13,7 @@ lnd_grpc_rust = "2.9.0"
 reqwest = "0.12.12"
 webpki = "0.22.4"
 sha2 = "0.10.8"
-nostr = "0.40.0"
+nostr = "0.41.0"
 tokio = "1.42.0"
 idna = "1.0.0"
 
