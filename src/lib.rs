@@ -1,3 +1,6 @@
+pub fn hello() {
+    println!("Hello from rust_l402 library!");
+}
 pub mod client {
     use crate::tokenstore::proxy::RustL402;
 

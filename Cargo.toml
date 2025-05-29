@@ -25,3 +25,7 @@ rustdoc-args = ["--cfg", "docsrs"]
 [package.metadata]
 tags = ["rust", "lnd", "grpc", "tonic", "client", "bitcoin", "lightning"]
 
+
+[[bin]]
+name = "rust_l402d"
+path = "bin/rust_l402d.rs"
