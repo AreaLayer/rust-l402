@@ -16,7 +16,7 @@ sha2 = "0.10.8"
 nostr = "0.43.1"
 tokio = "1.47.0"
 idna = "1.0.0"
-tonic = "=0.14.1"
+tonic = "=0.14.2"
 
 [package.metadata.docs.rs]
 all-features = true
